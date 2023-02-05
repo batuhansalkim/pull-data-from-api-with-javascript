@@ -5,11 +5,11 @@ let data = {
         {name:"Necla", surname:"salkım",age:"46"},
         {name:"Mustafa", surname:"salkım",age:"47"},
     ],
-    islem:"Get"
+    islem:"Get",
 }
-
-console.log(data)
-
+//console.log(typeof data);
+var kayit = JSON.stringify(data); //stringe çevirir
+console.log(kayit);
 
 
 
