@@ -1,0 +1,16 @@
+{
+    "kullanicilar":[
+        {
+            "name":"Mehmet", 
+            "surname":"Uzun",
+            "age":23
+        },
+        {
+            "name":"Gizem", 
+            "surname":"Hüner",
+            "age":24
+        }
+    ],
+    
+    "yetki":["Yönetici","Kullanici"]
+}
