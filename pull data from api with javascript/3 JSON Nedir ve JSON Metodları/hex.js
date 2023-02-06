@@ -6,15 +6,28 @@ let data = {
         {name:"Mustafa", surname:"salkım",age:"47"},
     ],
     islem:"Get",
+  
 }
 //console.log(typeof data);
-var kayit = JSON.stringify(data); //stringe çevirir
-console.log(kayit);
+// var kayit = JSON.stringify(data); //stringe çevirir
+// console.log(kayit);
+// var cevir = JSON.parse(kayit);
+// console.log(cevir);
 
 
+var kisiler = document.getElementsByClassName("kisiler")[0];
 
-
-
+for(let getir in data){
+    
+    var gelen = data[getir];
+    if(getir == "kisiler"){
+        
+        for(isimler in gelen){
+            kisiler.innerHTML += `<li>${gelen[isimler][ "name"] +  gelen[isimler][ "surname"]}</li>`
+            
+        }
+    }
+}
 
 
 
