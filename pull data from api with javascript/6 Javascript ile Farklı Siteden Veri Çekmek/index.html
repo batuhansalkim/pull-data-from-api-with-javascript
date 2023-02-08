@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <button id="button">Save</button>
+    <script>
+        
+        const login = (username, password, callback) => {
+            setTimeout(()=>{
+                callback({username:username, email: "batu@gmail.com"})
+            },1000);
+        }
+        const getPostByUsername = (username, callback)=>{
+            setTimeout(()=>{
+                callback(["post 1","post 2", "post 3"]);
+            },2000);
+        }
+        const getPostDetails = (post, callback) => {
+            setTimeout(() => {
+                callback("post details loaded kardeş");
+            }, 1000);
+        }
+
+        login("batuhansalkim","12345",user=>{
+            console.log(user.username);
+            console.log(user.email);
+
+
+            getPostByUsername(user.username, (posts)=>{
+                console.log(posts);
+
+                getPostDetails(posts[0], (details)=>{
+                    console.log(details);
+                })
+            });
+        })
+    </script>
+</body>
+</html>
