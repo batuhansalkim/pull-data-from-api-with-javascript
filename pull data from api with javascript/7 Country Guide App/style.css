@@ -64,20 +64,23 @@ body {
   text-transform: uppercase;
   letter-spacing: 2px;
   margin-bottom: 1.8em;
-
 }
+
 .data-wrapper {
   margin-bottom: 1em;
   letter-spacing: 0.3px;
 }
+
 .container h4 {
   display: inline;
   font-weight: 500;
   color: #222a43;
 }
+
 .container span {
   color: #5d6274;
 }
+
 .container h3 {
   text-align: center;
   font-size: 1.2em;
