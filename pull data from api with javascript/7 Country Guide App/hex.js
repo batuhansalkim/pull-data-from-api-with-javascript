@@ -18,8 +18,9 @@ searchBtn.addEventListener("click",()=>{
         
         console.log(data[0].currencies[Object.keys(data[0].currencies)].name);
 
-        console.log(data[0].currencies[Object.keys(data[0].currencies)].symbol);
-        console.log(Object.values(data[0].languages).toString().split(",").join(", "));
+        
+        console.log(
+            Object.values(data[0].languages).toString().split(",").join(","));
     })
 })
 
