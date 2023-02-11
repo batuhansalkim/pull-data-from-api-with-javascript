@@ -43,8 +43,15 @@ body {
   outline: none;
   color: #222a43;
 }
-
-
+#result{
+  margin-top: 1.25em;
+}
+.container .flag-img{
+  display: block;
+  width: 45%;
+  min-width: 7.5em;
+  margin: 1.8em auto 1.2em auto;
+}
 
 
 

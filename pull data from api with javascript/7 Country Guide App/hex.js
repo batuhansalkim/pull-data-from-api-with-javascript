@@ -1,7 +1,9 @@
 let searchBtn = document.getElementById("search-btn");
 
 let countryInp = document.getElementById("country-inp");
- 
+
+let result = document.getElementsByClassName("result");
+
 searchBtn.addEventListener("click",()=>{
     let countryName = "India";
     let finalURL = `https://restcountries.com/v3.1/name/${countryName}?fullText=true`
@@ -20,7 +22,11 @@ searchBtn.addEventListener("click",()=>{
 
         
         console.log(
-            Object.values(data[0].languages).toString().split(",").join(","));
+            Object.values(data[0].languages).toString().split(",").join(",")
+        );
+        result.innerHTML = `
+            <img src="${data[0].flags.svg}" class="flag-img">
+        `;
     })
 })
 
