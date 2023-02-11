@@ -28,6 +28,7 @@ searchBtn.addEventListener("click",()=>{
             <img src="${data[0].flags.svg}" class="flag-img">
         `;
     })
+    
 })
 
 
