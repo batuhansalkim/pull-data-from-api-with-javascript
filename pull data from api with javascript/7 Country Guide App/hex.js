@@ -1,5 +1,7 @@
 let searchBtn = document.getElementById("search-btn");
 let countryInp = document.getElementById("country-inp");
+
+
 searchBtn.addEventListener("click", () => {
     let countryName = countryInp.value;
     let finalURL = `https://restcountries.com/v3.1/name/${countryName}?fullText=true`;
@@ -19,6 +21,7 @@ searchBtn.addEventListener("click", () => {
             //   );
             result.innerHTML = `
         <img src="${data[0].flags.svg}" class="flag-img">
+        
         <h2>${data[0].name.common}</h2>
         <div class="wrapper">
             <div class="data-wrapper">
@@ -58,7 +61,7 @@ searchBtn.addEventListener("click", () => {
         })
         .catch(() => {
             if (countryName.length == 0) {
-                result.innerHTML = `<h3>The input field cannot be empty</h3>`;
+                result.innerHTML = `<h3>Enesin göte şaplak</h3>`;
             } else {
                 result.innerHTML = `<h3>Please enter a valid country name.</h3>`;
             }
