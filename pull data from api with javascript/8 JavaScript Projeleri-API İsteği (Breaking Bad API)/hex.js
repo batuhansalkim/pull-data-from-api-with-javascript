@@ -1,16 +1,22 @@
-const url = "https://api.breakingbadquotes.xyz/v1/quotes";
 let pTag = document.getElementById("pTag");
+let button = document.getElementById("btn");
 
-fetch(url)
-.then((res)=> res.json())
-.then((data)=>{
-    pTag.innerHTML = data.map(data=>
+button.addEventListener("click",()=>{
+    const url = "https://api.breakingbadquotes.xyz/v1/quotes";
+    fetch(url)
+        .then((res)=> res.json())
+        .then((data)=>{
+            
+        pTag.innerHTML = data.map(data=>
         `
-        <p>${data.author}</p>
-        <p>${data.quote}</p>
-        `
-    );
-}).catch(e=>alert("hataaa"));
+            <h2>${data.quote}</h2>
+            <p>${data.author}</p>
+        `      
+        );
+    }).catch(e=>alert("hataaa"));
+})
+    
+
 
 
 

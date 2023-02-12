@@ -14,15 +14,33 @@ body{
     height: 100vh;    
     
 }
-.breaking-bad{
-    font-size: 30px;
+.breaking-bad h2{
+    font-size: 35px;
     color: white;
     text-align: center;
+    padding-bottom: 20px;
 }
-
-
-
-
+.breaking-bad p{
+    font-size: 24px;
+    color: black;
+    text-align: right;
+}
+#btn
+{
+    width: 50px;
+    height: 40px;
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    background: white;
+    color: black;
+}
+#btn:hover{
+    background: black;
+    color: white;
+}
 
 
 
